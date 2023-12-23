@@ -1,10 +1,9 @@
 'use client';
 
-import Link from "next/link";
-import { useRegister } from "./hooks/useRegister";
 import Image from 'next/image';
+import { useRegister } from './hooks/useRegister';
 import { Button } from '../ui/button';
-import { Input } from "../ui/input";
+import { Input } from '../ui/input';
 
 export const Register = () => {
   const { handleChangeRegisterData, handleSubmitRegisterData } = useRegister();
@@ -21,42 +20,41 @@ export const Register = () => {
             Lets sign up to your account and start your calorie management
           </p>
           <div className="grid grid-cols-2 gap-2">
-          <Input
-            name="firstName"
-            placeholder="First Name"
-            onChange={handleChangeRegisterData}
-            className="bg-secondary-200"
-          />
-          <Input
-            name="lastName"
-            placeholder="Last Name"
-            onChange={handleChangeRegisterData}
-            className="bg-secondary-200"
-          />
-        </div>
-        <Input
-          name="username"
-          placeholder="username"
-          onChange={handleChangeRegisterData}
-          className="bg-secondary-200"
-        />
-        <Input
-          name="email"
-          placeholder="email@yours.com"
-          onChange={handleChangeRegisterData}
-          className="bg-secondary-200"
-        />
-        <Input
-          name="password"
-          type="password"
-          placeholder="password"
-          onChange={handleChangeRegisterData}
-        />
-        <Button className="w-full rounded-full bg-teal-500" onClick={handleSubmitRegisterData}>
-          Register
-        </Button>
-          <div className="flex items-center gap-2">
+            <Input
+              name="firstName"
+              placeholder="First Name"
+              onChange={handleChangeRegisterData}
+              className="bg-secondary-200"
+            />
+            <Input
+              name="lastName"
+              placeholder="Last Name"
+              onChange={handleChangeRegisterData}
+              className="bg-secondary-200"
+            />
           </div>
+          <Input
+            name="username"
+            placeholder="username"
+            onChange={handleChangeRegisterData}
+            className="bg-secondary-200"
+          />
+          <Input
+            name="email"
+            placeholder="email@yours.com"
+            onChange={handleChangeRegisterData}
+            className="bg-secondary-200"
+          />
+          <Input
+            name="password"
+            type="password"
+            placeholder="password"
+            onChange={handleChangeRegisterData}
+          />
+          <Button className="w-full rounded-full bg-teal-500" onClick={handleSubmitRegisterData}>
+            Register
+          </Button>
+          <div className="flex items-center gap-2" />
         </div>
         <div>
           <p>
